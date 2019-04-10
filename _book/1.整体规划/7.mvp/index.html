@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>路由设计 · Any ring H5 前端设计概要</title>
+        <title>MVP表 · Any ring H5 前端设计概要</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -85,10 +85,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../4.项目目录结构/" />
+    <link rel="next" href="../../2.菜单栏/" />
     
     
-    <link rel="prev" href="../2.整体布局规划/" />
+    <link rel="prev" href="../6.资源仓库/" />
     
 
     </head>
@@ -170,9 +170,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="./">
+        <li class="chapter " data-level="1.2.3" data-path="../3.路由设计/">
             
-                <a href="./#1-3">
+                <a href="../3.路由设计/#1-3">
             
                     
                     路由设计
@@ -222,9 +222,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="../7.mvp/">
+        <li class="chapter " data-level="1.2.7" data-path="./">
             
-                <a href="../7.mvp/#1-7">
+                <a href="./#1-7">
             
                     
                     MVP表
@@ -347,7 +347,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >路由设计</a>
+        <a href="../.." >MVP表</a>
     </h1>
 </div>
 
@@ -362,70 +362,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <html><head></head><body><h1 id="&#x8DEF;&#x7531;&#x8BBE;&#x8BA1;">&#x8DEF;&#x7531;&#x8BBE;&#x8BA1;</h1>
-<p>&#x8DEF;&#x7531;&#x8BBE;&#x8BA1;&#x4E2D;&#xFF0C;&#x76F8;&#x5BF9;&#x72EC;&#x7ACB;&#x7684;&#x754C;&#x9762;&#xFF0C;&#x6216;&#x5F71;&#x54CD;&#x6570;&#x636E;&#x83B7;&#x53D6;&#x7684;&#x754C;&#x9762;&#xFF08;&#x5982;&#x767B;&#x5F55;&#x754C;&#x9762;&#xFF0C;&#x53EA;&#x6709;&#x767B;&#x5F55;&#x540E;&#x624D;&#x80FD;&#x83B7;&#x53D6;&#x5230;&#x5176;&#x4ED6;&#x7684;&#x6570;&#x636E;&#xFF09;&#x91C7;&#x7528;&#x72EC;&#x7ACB;&#x7684;&#x6839;&#x8DEF;&#x7531;&#x3002;&#x5C40;&#x90E8;&#x53D8;&#x5316;&#x7684;&#x5185;&#x5BB9;&#x91C7;&#x7528;&#x5B50;&#x8DEF;&#x7531;&#x6216;&#x52A8;&#x6001;&#x8DEF;&#x7531;&#xFF08;&#x5982;&#xFF1A;&#x4E09;&#x5217;&#x5E03;&#x5C40;&#x4E2D;&#x7684;&#x7B2C;&#x4E09;&#x5217;&#x91C7;&#x7528;&#x5B50;&#x8DEF;&#x7531;&#x6765;&#x5C55;&#x793A;&#x7279;&#x5B9A;&#x5185;&#x5BB9;&#xFF09;</p>
-<p>&#x56E0;&#x4E3A;home&#x754C;&#x9762;&#x5305;&#x542B;&#x4E86;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x6838;&#x5FC3;&#x90E8;&#x5206;&#xFF0C;&#x5185;&#x5BB9;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#x3002;&#x8DEF;&#x7531;&#x8BBE;&#x8BA1;&#x4E2D;&#xFF0C;&#x672C;&#x7740;&#x4FBF;&#x4E8E;&#x4F20;&#x64AD;&#x7684;&#x8BBE;&#x8BA1;&#x7406;&#x5FF5;&#xFF08;&#x5982;&#xFF1A;&#x6211;&#x73B0;&#x5728;&#x67E5;&#x770B;&#x7684;&#x662F;&#x9879;&#x76EE;5&#x7684;401&#x65E5;&#x7A0B;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x590D;&#x5236;&#x6211;&#x7684;url&#x7ED9;&#x522B;&#x4EBA;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4ED6;&#x76F4;&#x63A5;&#x770B;&#x5230;&#x7684;&#x5C31;&#x5E94;&#x8BE5;&#x4E5F;&#x662F;&#x9879;&#x76EE;5&#x7684;401&#x65E5;&#x7A0B;&#xFF09;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;&#x5230;hash&#xFF0C;query&#xFF0C;params&#x53CA;&#x52A8;&#x6001;&#x8DEF;&#x7531;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x643A;&#x5E26;&#x53C2;&#x6570;</p>
-<table>
-<thead>
-<tr>
-<th>&#x8DEF;&#x7531;</th>
-<th>&#x53C2;&#x6570;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>/</td>
-<td></td>
-<td>&#x9879;&#x76EE;&#x6839;&#x8DEF;&#x7531;&#xFF0C;redirect&#x5230; /home</td>
-</tr>
-<tr>
-<td>/signIn</td>
-<td>type</td>
-<td>&#x767B;&#x5F55;&#x754C;&#x9762;&#xFF0C;type &#x7C7B;&#x522B;&#xFF0C;&#x5982;&#xFF1A;&#x9009;&#x624B;&#x767B;&#x5F55;&#x3001;&#x7BA1;&#x7406;&#x5458;&#x767B;&#x5F55;&#x6807;&#x8BC6;</td>
-</tr>
-<tr>
-<td>/home</td>
-<td>pid, rid</td>
-<td>&#x4E09;&#x5217;&#x5E03;&#x5C40;&#x4E3B;&#x9875;&#xFF0C;pid &#x9879;&#x76EE;id&#xFF0C;rid &#x89D2;&#x8272;id&#xFF0C;&#x91C7;&#x7528; hash &#x7684;&#x65B9;&#x5F0F;&#x8FFD;&#x52A0;&#x5230; url &#x540E;&#xFF0C;&#x65B9;&#x4FBF;&#x590D;&#x5236;url&#x65F6;&#x76F4;&#x63A5;&#x6253;&#x5F00;&#x6307;&#x5B9A;&#x9879;&#x76EE;&#x7684;&#x6307;&#x5B9A;&#x65E5;&#x7A0B;</td>
-</tr>
-<tr>
-<td>/home/files</td>
-<td>nid</td>
-<td>nid node &#x8282;&#x70B9;id</td>
-</tr>
-<tr>
-<td>/home/mvp</td>
-<td>pid</td>
-<td>mvp&#x8868;&#xFF0C;pid &#x9879;&#x76EE;id</td>
-</tr>
-<tr>
-<td>/home/ring</td>
-<td>pid</td>
-<td>ring&#x6D88;&#x606F;&#xFF0C;pid &#x9879;&#x76EE;id</td>
-</tr>
-<tr>
-<td>/home/score</td>
-<td>nid</td>
-<td>&#x8BC4;&#x5206;&#xFF0C;nid node&#x8282;&#x70B9; id</td>
-</tr>
-<tr>
-<td>/signUp/form</td>
-<td></td>
-<td>&#x9009;&#x624B;&#x62A5;&#x540D;</td>
-</tr>
-<tr>
-<td>/signUp/list</td>
-<td></td>
-<td>&#x62A5;&#x540D;&#x7BA1;&#x7406;&#x5458;&#x67E5;&#x770B;&#x9879;&#x76EE;&#x5217;&#x8868;</td>
-</tr>
-<tr>
-<td>/signUp/detail</td>
-<td></td>
-<td>&#x62A5;&#x540D;&#x7BA1;&#x7406;&#x5458;&#x67E5;&#x770B;&#x9879;&#x76EE;&#x8BE6;&#x60C5;</td>
-</tr>
-</tbody>
-</table>
+                                <html><head></head><body><h1 id="mvp&#x8868;&#x53CA;&#x8BA1;&#x5212;&#x8FDB;&#x5EA6;">MVP&#x8868;&#x53CA;&#x8BA1;&#x5212;&#x8FDB;&#x5EA6;</h1>
+<p><a href="https://www.yuque.com/office/yuque/0/2019/xlsx/105925/1554904684007-0797fa83-df86-4a8e-8a6d-18c3d0393272.xlsx" target="_blank">MVP&#x8868;</a></p>
 </body></html>
                                 
                                 </section>
@@ -453,12 +391,12 @@
 
             
                 
-                <a href="../2.整体布局规划/#1-2" class="navigation navigation-prev " aria-label="Previous page: 整体布局规划">
+                <a href="../6.资源仓库/#1-6" class="navigation navigation-prev " aria-label="Previous page: 资源仓库">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../4.项目目录结构/#1-4" class="navigation navigation-next " aria-label="Next page: 项目目录结构">
+                <a href="../../2.菜单栏/" class="navigation navigation-next " aria-label="Next page: 第二章 菜单栏模块">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -469,7 +407,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"路由设计","level":"1.2.3","depth":2,"next":{"title":"项目目录结构","level":"1.2.4","depth":2,"anchor":"#1-4","path":"1.整体规划/4.项目目录结构/README.md","ref":"1.整体规划/4.项目目录结构/README.md#1-4","articles":[]},"previous":{"title":"整体布局规划","level":"1.2.2","depth":2,"anchor":"#1-2","path":"1.整体规划/2.整体布局规划/README.md","ref":"1.整体规划/2.整体布局规划/README.md#1-2","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","sharing-plus","back-to-top-button","expandable-chapters-small","insert-logo","code","search-pro","github","todo","auto-scroll-table","lightbox","custom-favicon","donate","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mongs/Anyring.git"},"livereload":{},"todo":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"http://fengjun.xyz/uploads/alipay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"大爷,赏一个吧","wechat":"http://fengjun.xyz/uploads/wxpay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"http://fengjun.xyz/favicon.ico?v=5.1.2","lightbox":{"jquery":true},"back-to-top-button":{},"custom-favicon":{},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["douban","weibo","qq","facebook","google","twitter"],"douban":false,"facebook":false,"weibo":false,"twitter":false,"pocket":false,"google":false,"qzone":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"","url":"http://fengjun.xyz/uploads/avatar.jpg"}},"theme":"default","author":"wally","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Any ring H5 前端设计概要","language":"zh-hans","gitbook":"*","description":"本书是传控科技Any ring H5的设计说明文档"},"file":{"path":"1.整体规划/3.路由设计/README.md","mtime":"2019-04-10T09:37:11.603Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-10T13:46:52.237Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MVP表","level":"1.2.7","depth":2,"next":{"title":"第二章 菜单栏模块","level":"1.3","depth":1,"path":"2.菜单栏/README.md","ref":"2.菜单栏/README.md","articles":[]},"previous":{"title":"资源仓库","level":"1.2.6","depth":2,"anchor":"#1-6","path":"1.整体规划/6.资源仓库/README.md","ref":"1.整体规划/6.资源仓库/README.md#1-6","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","sharing-plus","back-to-top-button","expandable-chapters-small","insert-logo","code","search-pro","github","todo","auto-scroll-table","lightbox","custom-favicon","donate","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mongs/Anyring.git"},"livereload":{},"todo":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"http://fengjun.xyz/uploads/alipay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"大爷,赏一个吧","wechat":"http://fengjun.xyz/uploads/wxpay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"http://fengjun.xyz/favicon.ico?v=5.1.2","lightbox":{"jquery":true},"back-to-top-button":{},"custom-favicon":{},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["douban","weibo","qq","facebook","google","twitter"],"douban":false,"facebook":false,"weibo":false,"twitter":false,"pocket":false,"google":false,"qzone":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"","url":"http://fengjun.xyz/uploads/avatar.jpg"}},"theme":"default","author":"wally","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Any ring H5 前端设计概要","language":"zh-hans","gitbook":"*","description":"本书是传控科技Any ring H5的设计说明文档"},"file":{"path":"1.整体规划/7.mvp/README.md","mtime":"2019-04-10T13:58:44.159Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-10T13:46:52.237Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

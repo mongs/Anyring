@@ -1,2 +1,54 @@
 {
+    "title": "Any ring H5 前端设计概要",
+    "author": "wally",
+    "description": "本书是传控科技Any ring H5的设计说明文档",
+    "language": "zh-hans",
+    "plugins": [
+        "-search",
+        "-lunr",
+        "-sharing",
+        "sharing-plus",
+        "back-to-top-button",
+        "expandable-chapters-small",
+        "insert-logo",
+        "code",
+        "search-pro",
+        "github",
+        "todo",
+        "auto-scroll-table",
+        "lightbox",
+        "custom-favicon",
+        "donate"
+    ],
+    "pluginsConfig": {
+        "insert-logo": {
+            "url": "http://fengjun.xyz/uploads/avatar.jpg",
+            "style": ""
+        },
+        "favicon": "http://fengjun.xyz/favicon.ico?v=5.1.2",
+        "donate": {
+            "wechat": "http://fengjun.xyz/uploads/wxpay.png",
+            "alipay": "http://fengjun.xyz/uploads/alipay.jpg",
+            "title": "大爷,赏一个吧",
+            "button": "打赏",
+            "alipayText": "支付宝打赏",
+            "wechatText": "微信打赏"
+        },
+        "github": {
+            "url": "https://github.com/mongs/Anyring.git"
+        },
+        "sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": false,
+            "pocket": false,
+            "qq": false,
+            "qzone": false,
+            "twitter": false,
+            "weibo": false,
+            "all": [
+                "douban", "weibo", "qq", "facebook", "google", "twitter"
+            ]
+        }
+    }
 }
