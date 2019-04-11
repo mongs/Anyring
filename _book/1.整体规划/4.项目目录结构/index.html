@@ -253,9 +253,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../">
+        <li class="chapter " data-level="1.4" data-path="../../3.登录模块/">
             
-                <a href="../">
+                <a href="../../3.登录模块/">
             
                     
                     第三章 登录模块
@@ -263,25 +263,6 @@
                 </a>
             
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.4.1" data-path="../1.功能模块划分/">
-            
-                <a href="../1.功能模块划分/">
-            
-                    
-                    功能模块划分
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -363,6 +344,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <html><head></head><body><h1 id="&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h1>
+<h2 id="&#x6574;&#x4F53;&#x7ED3;&#x6784;&#x8BF4;&#x660E;">&#x6574;&#x4F53;&#x7ED3;&#x6784;&#x8BF4;&#x660E;</h2>
 <pre><code class="lang-bash">.
 &#x251C;&#x2500;&#x2500; README.md
 &#x251C;&#x2500;&#x2500; babel.config.js <span class="hljs-comment"># babel&#x7F16;&#x8BD1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
@@ -406,12 +388,26 @@
 &#x251C;&#x2500;&#x2500; vue.config.js <span class="hljs-comment"># &#x914D;&#x7F6E;webpack &#x53CA; api&#x4EE3;&#x7406;</span>
 &#x2514;&#x2500;&#x2500; yarn.lock
 </code></pre>
-<p>public &#x4E0E; src/assets&#x7684;&#x533A;&#x522B;&#xFF1A;</p>
+<h2 id="views&#x7ED3;&#x6784;&#x8BF4;&#x660E;">views&#x7ED3;&#x6784;&#x8BF4;&#x660E;</h2>
+<ul>
+<li>SignIn &#x767B;&#x5F55;&#x754C;&#x9762;</li>
+<li>Index.vue /home&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x9879;&#x76EE;&#x4E3B;&#x754C;&#x9762;</li>
+<li>Project &#x4E3B;&#x9875;&#x4E2D;&#x7B2C;&#x4E8C;&#x5217;&#xFF0C;&#x201C;&#x591A;&#x89D2;&#x8272;&#x65E5;&#x7A0B;&#x201D;&#x5217;&#xFF0C; &#x63D2;&#x5165;&#x5728;Index.vue&#x4E2D;</li>
+<li>Ring ring&#x6D88;&#x606F;&#x5217;&#xFF0C;&#x4E3B;&#x9875;&#x7684;&#x7B2C;&#x4E09;&#x5217;&#x4E2D;&#x5C55;&#x793A;&#xFF0C;&#x63D2;&#x5165;&#x5728;Index.vue&#x4E2D;</li>
+<li>Deliverable &#x4EA4;&#x4ED8;&#x7269;&#x5217;&#xFF0C;&#x4E3B;&#x9875;&#x7684;&#x7B2C;&#x4E09;&#x5217;&#x4E2D;&#x5C55;&#x793A;&#xFF0C;&#x63D2;&#x5165;&#x5728;Index.vue&#x4E2D;</li>
+</ul>
+<h2 id="components&#x7ED3;&#x6784;&#x8BF4;&#x660E;">components&#x7ED3;&#x6784;&#x8BF4;&#x660E;</h2>
+<ul>
+<li>Navigation &#x4E3B;&#x9875;&#x4E2D;&#xFF0C;&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x680F;&#x7EC4;&#x4EF6;&#xFF0C;&#x63D2;&#x5165;&#x5728;Index.vue&#x4E2D;</li>
+<li>Calendar &#x65E5;&#x5386;&#x7EC4;&#x4EF6;&#xFF0C;&#x5728;&#x4E3B;&#x9875;&#x7684;&#x7B2C;&#x4E00;&#x5217;&#x5C55;&#x793A;&#xFF0C;&#x63D2;&#x5165;&#x5728;Index.vue&#x4E2D;</li>
+<li>Projects &#x67D0;&#x5929;&#x7684;&#x9879;&#x76EE;&#x5217;&#x8868;&#x7EC4;&#x4EF6;&#xFF0C;&#x5728;&#x4E3B;&#x9875;&#x7684;&#x7B2C;&#x4E00;&#x5217;&#x4E2D;&#x65E5;&#x5386;&#x4E0B;&#x65B9;&#x5C55;&#x793A;&#xFF0C;&#x63D2;&#x5165;&#x5728;Index.vue&#x4E2D;</li>
+</ul>
+<h2 id="public-&#x4E0E;-srcassets&#x7684;&#x533A;&#x522B;">public &#x4E0E; src/assets&#x7684;&#x533A;&#x522B;</h2>
 <ul>
 <li>public &#x4E0D;&#x4F1A;&#x88AB;webpack&#x6253;&#x5305;&#x5904;&#x7406;&#xFF0C;&#x76F4;&#x63A5;&#x590D;&#x5236;&#x5230;&#x6700;&#x7EC8;&#x76EE;&#x5F55;&#x4E0B;</li>
 <li>assets &#x4F1A;&#x7ECF;&#x8FC7;webpack&#x6253;&#x5305;&#xFF0C;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;</li>
 </ul>
-<p>views &#x4E0E; components&#x7684;&#x8BF4;&#x660E;&#xFF1A;</p>
+<h2 id="views-&#x4E0E;-components&#x7684;&#x8BF4;&#x660E;">views &#x4E0E; components&#x7684;&#x8BF4;&#x660E;</h2>
 <ul>
 <li>views &#x4E0E; components&#x7684;&#x7ED3;&#x6784;&#x662F;&#x4E00;&#x81F4;&#x7684;</li>
 <li>&#x76EE;&#x5F55;&#x4E0B;&#x5B58;&#x653E;&#x5F53;&#x524D;&#x7684;.vue&#x6587;&#x4EF6;&#x53CA;&#x8D1F;&#x8D23;&#x5904;&#x7406;&#x63A5;&#x53E3;&#x7684; api.js</li>
@@ -461,7 +457,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"项目目录结构","level":"1.2.4","depth":2,"next":{"title":"技术选型","level":"1.2.5","depth":2,"anchor":"#1-5","path":"1.整体规划/5.技术选型/README.md","ref":"1.整体规划/5.技术选型/README.md#1-5","articles":[]},"previous":{"title":"路由设计","level":"1.2.3","depth":2,"anchor":"#1-3","path":"1.整体规划/3.路由设计/README.md","ref":"1.整体规划/3.路由设计/README.md#1-3","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","sharing-plus","back-to-top-button","expandable-chapters-small","insert-logo","code","search-pro","github","todo","auto-scroll-table","lightbox","custom-favicon","donate","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mongs/Anyring.git"},"livereload":{},"todo":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"http://fengjun.xyz/uploads/alipay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"大爷,赏一个吧","wechat":"http://fengjun.xyz/uploads/wxpay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"http://fengjun.xyz/favicon.ico?v=5.1.2","lightbox":{"jquery":true},"back-to-top-button":{},"custom-favicon":{},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["douban","weibo","qq","facebook","google","twitter"],"douban":false,"facebook":false,"weibo":false,"twitter":false,"pocket":false,"google":false,"qzone":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"","url":"http://fengjun.xyz/uploads/avatar.jpg"}},"theme":"default","author":"wally","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Any ring H5 前端设计概要","language":"zh-hans","gitbook":"*","description":"本书是传控科技Any ring H5的设计说明文档"},"file":{"path":"1.整体规划/4.项目目录结构/README.md","mtime":"2019-04-10T09:37:11.604Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-10T13:46:52.237Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"项目目录结构","level":"1.2.4","depth":2,"next":{"title":"技术选型","level":"1.2.5","depth":2,"anchor":"#1-5","path":"1.整体规划/5.技术选型/README.md","ref":"1.整体规划/5.技术选型/README.md#1-5","articles":[]},"previous":{"title":"路由设计","level":"1.2.3","depth":2,"anchor":"#1-3","path":"1.整体规划/3.路由设计/README.md","ref":"1.整体规划/3.路由设计/README.md#1-3","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","-sharing","sharing-plus","back-to-top-button","expandable-chapters-small","insert-logo","code","search-pro","github","todo","auto-scroll-table","lightbox","custom-favicon","donate","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mongs/Anyring.git"},"livereload":{},"todo":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"code":{"copyButtons":true},"donate":{"alipay":"http://fengjun.xyz/uploads/alipay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"大爷,赏一个吧","wechat":"http://fengjun.xyz/uploads/wxpay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"http://fengjun.xyz/favicon.ico?v=5.1.2","lightbox":{"jquery":true},"back-to-top-button":{},"custom-favicon":{},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["douban","weibo","qq","facebook","google","twitter"],"douban":false,"facebook":false,"weibo":false,"twitter":false,"pocket":false,"google":false,"qzone":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"width: 100px; height: 100px; border-radius: 50%","url":"http://fengjun.xyz/uploads/avatar.jpg"}},"theme":"default","author":"wally","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Any ring H5 前端设计概要","language":"zh-hans","gitbook":"*","description":"本书是传控科技Any ring H5的设计说明文档"},"file":{"path":"1.整体规划/4.项目目录结构/README.md","mtime":"2019-04-11T00:26:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-10T23:21:09.121Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

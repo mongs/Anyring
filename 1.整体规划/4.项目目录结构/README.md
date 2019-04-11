@@ -1,5 +1,7 @@
 # 项目目录结构
 
+## 整体结构说明
+
 ``` bash
 .
 ├── README.md
@@ -45,12 +47,26 @@
 └── yarn.lock
 ```
 
-public 与 src/assets的区别：
+## views结构说明
+
++ SignIn 登录界面
++ Index.vue /home所对应的项目主界面
++ Project 主页中第二列，“多角色日程”列， 插入在Index.vue中
++ Ring ring消息列，主页的第三列中展示，插入在Index.vue中
++ Deliverable 交付物列，主页的第三列中展示，插入在Index.vue中
+
+## components结构说明
+
++ Navigation 主页中，左侧菜单栏组件，插入在Index.vue中
++ Calendar 日历组件，在主页的第一列展示，插入在Index.vue中
++ Projects 某天的项目列表组件，在主页的第一列中日历下方展示，插入在Index.vue中
+
+## public 与 src/assets的区别
 
 + public 不会被webpack打包处理，直接复制到最终目录下
 + assets 会经过webpack打包，重新编译
 
-views 与 components的说明：
+## views 与 components的说明
 
 + views 与 components的结构是一致的
 + 目录下存放当前的.vue文件及负责处理接口的 api.js

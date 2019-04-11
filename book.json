@@ -23,7 +23,7 @@
     "pluginsConfig": {
         "insert-logo": {
             "url": "http://fengjun.xyz/uploads/avatar.jpg",
-            "style": ""
+            "style": "width: 100px; height: 100px; border-radius: 50%"
         },
         "favicon": "http://fengjun.xyz/favicon.ico?v=5.1.2",
         "donate": {
